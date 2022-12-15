@@ -6,12 +6,13 @@ const showMessage = document.querySelector("#show-message")
 function dobIsLucky(){
    const dob = dateOfBirth.value ; 
    const sum = calculateSum(dob);
-   
+   if (sum &&luckyNumber.value ){
    if (sum%luckyNumber.value === 0){
     showMessage.innerText = "Your birthday is lucky ✌️ ";
    }
-  else {showMessage.innerText ="Your birthday is not lucky buddy ☹️"}
+  else {showMessage.innerText ="Your birthday is not lucky  ☹️"}
 }
+else{showMessage.innerText = "* Please Enter the both fields"}}
 
 function calculateSum(dob){
    dob = dob.replaceAll("-","");
