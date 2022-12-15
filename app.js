@@ -8,9 +8,9 @@ function dobIsLucky(){
    const sum = calculateSum(dob);
    
    if (sum%luckyNumber.value === 0){
-    showMessage.innerText = "your birthday is lucky ";
+    showMessage.innerText = "Your birthday is lucky ✌️ ";
    }
-  else {showMessage.innerText ="your birthday is not lucky buddy"}
+  else {showMessage.innerText ="Your birthday is not lucky buddy ☹️"}
 }
 
 function calculateSum(dob){
